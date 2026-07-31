@@ -94,6 +94,7 @@ export const projects = [
   {
     name: 'PeltierPulse Air Conditioner',
     subtitle: '2nd Place — Inter-College Hackathon 2024',
+    link: 'https://github.com/srinivaspanneerlm-cyber/PeltierPulse-Air-Conditioner',
     tech: ['Raspberry Pi Pico', 'Peltier Module', 'DC Motor', 'Python', 'Embedded C'],
     points: [
       'Built a thermoelectric air conditioning system using Peltier modules, Raspberry Pi Pico, and DC motor with smart automation, real-time sensing, and adaptive speed control.',
