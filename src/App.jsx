@@ -55,6 +55,7 @@ function Hero() {
         <h1 className="hero-name">{profile.name}</h1>
         <p className="hero-title">{profile.title}</p>
         <p className="hero-tagline">{profile.tagline}</p>
+        <div className="hero-availability">Open to Internships &amp; Opportunities</div>
         <div className="hero-actions">
           <a className="btn btn-primary" href="#projects">
             View My Work

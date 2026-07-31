@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Sri Nivaspanneer L M',
-  title: 'AI Engineer',
+  title: 'Founder & AI Systems Engineer',
   tagline:
-    'Building AI-driven platforms that solve real-world problems — from enterprise multi-agent systems to award-winning hardware.',
+    'Building Aegis AI – An Intelligent AI-Powered Insurance Platform.',
   location: 'Tirunelveli, Tamil Nadu',
   phone: '+91 77087 80835',
   email: 'Srinivaspanneerlm@gmail.com',
