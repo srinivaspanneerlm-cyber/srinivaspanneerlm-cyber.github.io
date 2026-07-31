@@ -1,4 +1,4 @@
-import { profile, about, skills, languages, projects, experience, education, achievements } from './data.js'
+import { profile, about, skills, languages, projects, experience, education, achievements, certifications } from './data.js'
 import profileImg from './assets/sri.jpeg'
 import './App.css'
 
@@ -23,7 +23,7 @@ const LinkedInIcon = () => (
 )
 
 function Navbar() {
-  const links = ['About', 'Skills', 'Projects', 'Experience', 'Education']
+  const links = ['About', 'Skills', 'Projects', 'Experience', 'Education', 'Certifications']
   return (
     <nav className="navbar">
       <a className="brand" href="#home">
@@ -61,6 +61,9 @@ function Hero() {
           </a>
           <a className="btn btn-ghost" href={`mailto:${profile.email}`}>
             Get in Touch
+          </a>
+          <a className="btn btn-ghost" href={profile.resume} download>
+            Download Resume
           </a>
         </div>
         <div className="hero-socials">
@@ -217,6 +220,22 @@ function Education() {
   )
 }
 
+function Certifications() {
+  return (
+    <section id="certifications" className="section">
+      <SectionTitle>Certifications</SectionTitle>
+      <div className="cert-grid">
+        {certifications.map((cert) => (
+          <article key={cert.name} className="cert-card">
+            <h3>{cert.name}</h3>
+            <p className="project-sub">{cert.issuer}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 function Contact() {
   return (
     <section id="contact" className="section contact">
@@ -229,6 +248,14 @@ function Contact() {
         </a>
         <a className="btn btn-ghost" href={`tel:${profile.phone.replace(/\s/g, '')}`}>
           {profile.phone}
+        </a>
+      </div>
+      <div className="hero-socials">
+        <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+          <GitHubIcon />
+        </a>
+        <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <LinkedInIcon />
         </a>
       </div>
     </section>
@@ -256,6 +283,7 @@ function App() {
         <Projects />
         <Experience />
         <Education />
+        <Certifications />
         <Contact />
       </main>
       <Footer />

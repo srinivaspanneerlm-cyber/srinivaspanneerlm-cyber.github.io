@@ -9,6 +9,7 @@ export const profile = {
   github: 'https://github.com/srinivaspanneerlm-cyber',
   githubAegis: 'https://github.com/srinivaspanneerlm-cyber/Aegis-Insurance-Agent',
   linkedin: 'https://www.linkedin.com/in/sri-nivaspanneer-l-m-3100812a5/',
+  resume: '/Sri_resume.pdf',
 }
 
 export const about = [
@@ -146,4 +147,19 @@ export const achievements = [
   '2nd Place — PeltierPulse Air Conditioner, Inter-College Hackathon 2024',
   'NPTEL — Cloud Computing (Elite + Silver)',
   'Founder — Skill Forge Tech Bootcamp',
+]
+
+export const certifications = [
+  {
+    name: 'NPTEL — Cloud Computing',
+    issuer: 'Elite + Silver',
+  },
+  {
+    name: 'TN-IMPACT 2026',
+    issuer: '4th Place · Cobot Factory Layout Simulator · TANCAM',
+  },
+  {
+    name: 'Inter-College Hackathon 2024',
+    issuer: '2nd Place · PeltierPulse Air Conditioner',
+  },
 ]

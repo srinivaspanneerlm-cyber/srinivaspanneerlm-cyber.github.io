@@ -6,9 +6,9 @@
   --text: #c6cad6;
   --text-dim: #8a90a3;
   --text-h: #f2f4f8;
-  --accent: #7c6cff;
-  --accent-2: #39d0d8;
-  --accent-glow: rgba(124, 108, 255, 0.35);
+  --accent: #ec4899;
+  --accent-2: #fb7185;
+  --accent-glow: rgba(236, 72, 153, 0.35);
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, 'SF Mono', Consolas, monospace;
